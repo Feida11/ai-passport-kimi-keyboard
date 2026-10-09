@@ -1,0 +1,25 @@
+{
+    "manufacturer": "folotoy",
+    "type": "ai-passport",
+    "target": "esp32c3",
+    "builds": [
+        {
+            "name": "ai-passport",
+            "sdkconfig_append": [
+                "CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"partitions/v2/8m.csv\"",
+                "CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y",
+                "CONFIG_LV_USE_QRCODE=n",
+                "CONFIG_USE_ESP_WAKE_WORD=n",
+                "CONFIG_USE_MULTILINE_CHAT_MESSAGE=y",
+                "CONFIG_LV_USE_FONT_COMPRESSED=y",
+                "CONFIG_BT_ENABLED=y",
+                "CONFIG_BT_NIMBLE_ENABLED=y",
+                "CONFIG_BT_NIMBLE_ROLE_CENTRAL=y",
+                "CONFIG_BT_NIMBLE_ROLE_PERIPHERAL=y",
+                "CONFIG_BT_NIMBLE_ROLE_BROADCASTER=y",
+                "CONFIG_BT_NIMBLE_MAX_CONNECTIONS=1"
+            ]
+        }
+    ]
+}

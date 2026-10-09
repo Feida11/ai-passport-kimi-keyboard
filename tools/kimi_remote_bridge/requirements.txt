@@ -1,0 +1,6 @@
+bleak>=0.21
+faster-whisper>=1.0
+pyperclip>=1.8
+pywin32>=306
+uiautomation>=2.0
+pytest>=8.0
